@@ -1,0 +1,22 @@
+<?php
+/** @var \Magento\Customer\Block\Form\Register $tmpBlock */
+$mobile = $tmpBlock->getFormData()->getData('mobile_number');
+?>
+
+<div class="field field-mobile_number required">
+    <label class="label" for="mobile_number"><span><?php /* @escapeNotVerified */
+            echo __('Mobile Number') ?></span></label>
+    <div class="control">
+        <input type="text"
+               id="mobile_number"
+               name="mobile_number"
+               title="<?php /* @escapeNotVerified */
+               echo __('Mobile Number') ?>"
+               class="input-text required-entry"
+               autocomplete="off"
+               value="<?php echo $mobile ?>"
+               maxlength="10"
+               minlength="10"
+               data-validate="{required:true, 'validate-number':true}">
+    </div>
+</div>

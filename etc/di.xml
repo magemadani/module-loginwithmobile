@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="\Magento\Customer\Model\AccountManagement">
+        <plugin name="Magemadani_loginwithmobile_customer_save_before" type="\Magemadani\Loginwithmobile\Model\AccountManagement"/>
+    </type>
+    <type name="\Magento\Customer\Controller\Account\CreatePost">
+        <plugin name="Magemadani_loginwithmobile_register_customer_save_before" type="Magemadani\Loginwithmobile\Plugin\Customer\Controller\Account\CreatePost"/>
+    </type>
+    <type name="\Magento\Customer\Controller\Account\EditPost">
+        <plugin name="Magemadani_loginwithmobile_customer_edit_before" type="Magemadani\Loginwithmobile\Plugin\Customer\Controller\Account\EditPost"/>
+    </type>
+</config>

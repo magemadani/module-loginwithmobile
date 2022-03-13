@@ -1,0 +1,22 @@
+{
+  "name": "magemadani/module-loginwithmobile",
+  "description": "Customer can login with mobile number",
+  "type": "magento2-module",
+  "license": "GPL-3.0",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Madani Hardik"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Magemadani\\Loginwithmobile\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
